@@ -46,7 +46,7 @@ public class UserServlet extends HttpServlet {
 		String cmd = uri.substring(uri.lastIndexOf("/")+1);
 		try {
 		if(cmd.equals("userJoin")) {    
-			us.joinUser(request);
+			us.joinUser(request); 
 		}
 		}catch(SQLException e) {
 			throw new ServletException("에러 : " + e.getMessage());
