@@ -47,7 +47,7 @@ public class UserServlet extends HttpServlet {
 		try {
 		if(cmd.equals("userJoin")) {    
 			us.joinUser(request); 
-		}
+		} 
 		}catch(SQLException e) {
 			throw new ServletException("에러 : " + e.getMessage());
 		}
